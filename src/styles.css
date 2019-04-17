@@ -4,12 +4,48 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  color: red;
 }
 .add {
-  position: relative;
-  left: calc(50% - 100px);
-  top: 20px;
-  width: 200px;
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 0px;
   margin-bottom: 20px;
+  color: white;
+  background: blue;
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 100px 0px 0px 100px;
+  box-shadow: rgba(60, 64, 67, 0.15) 5px 0px 3px 1px,
+    rgba(60, 64, 67, 0.3) 4px -1px 2px 0px;
+}
+.add:hover {
+  color: blue;
+  background: white;
+  border: solid;
+  border-color: blue;
+  border-width: 1px;
+}
+.total {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  box-shadow: rgba(60, 64, 67, 0.15) 5px 0px 3px 1px,
+    rgba(60, 64, 67, 0.3) 4px -1px 2px 0px;
+  z-index: 3;
+  background: white;
+}
+.content {
+  position: relative;
+  top: 50px;
+}
+li {
 }
