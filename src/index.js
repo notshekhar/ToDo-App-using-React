@@ -90,7 +90,7 @@ class App extends React.Component {
       <div className="app">
         <div className="header">
           <span className="total">
-            Total ToDos: {this.state.todos.length}, Unchecked ToDos:
+            Total : {this.state.todos.length}, Unchecked :{" "}
             {this.state.todos.filter(todo => !todo.checked).length}
           </span>
           <button className="add" onClick={() => this.addtodo()}>
