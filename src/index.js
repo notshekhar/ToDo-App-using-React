@@ -12,10 +12,19 @@ class ToDo extends React.Component {
       <div>
         <li>
           <input
+            id="option"
             type="checkbox"
+            name="field"
+            value="option"
             checked={this.props.todo.checked}
             onClick={this.props.ontoggle}
           />
+          <label for="option">
+            <span>
+              <span />
+            </span>
+            Value
+          </label>
           <span>{this.props.todo.text}</span> &nbsp;&nbsp;
           <button onClick={this.props.ondelete}>delete</button>
         </li>
