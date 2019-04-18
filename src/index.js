@@ -26,7 +26,9 @@ class ToDo extends React.Component {
             Value
           </label>
           <span>{this.props.todo.text}</span> &nbsp;&nbsp;
-          <button onClick={this.props.ondelete}>delete</button>
+          <button onClick={this.props.ondelete} className="delete">
+            <img src="https://image.flaticon.com/icons/svg/61/61391.svg" />
+          </button>
         </li>
       </div>
     );
